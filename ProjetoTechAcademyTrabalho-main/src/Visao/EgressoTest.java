@@ -21,8 +21,8 @@ public class EgressoTest extends AbsTest {
 
         System.out.println("-- Buscar");
         Egresso achado = srv.Buscar(201);
-        verificar("Buscar código 201 retorna Carla Mendes",
-            achado != null && achado.getNome().equals("Carla Mendes"));
+        verificar("Buscar código 201 retorna Paula Nunes",
+            achado != null && achado.getNome().equals("Paula Nunes"));
         verificar("Buscar código inexistente retorna null", srv.Buscar(999) == null);
 
         System.out.println("-- Incluir");

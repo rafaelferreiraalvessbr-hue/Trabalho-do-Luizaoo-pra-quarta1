@@ -21,8 +21,8 @@ public class EstagiarioTest extends AbsTest {
 
         System.out.println("-- Buscar");
         Estagiario achado = srv.Buscar(402);
-        verificar("Buscar código 402 retorna Camila Reis",
-            achado != null && achado.getNome().equals("Camila Reis"));
+        verificar("Buscar código 402 retorna Maria Marta",
+            achado != null && achado.getNome().equals("Maria Marta"));
         verificar("Buscar código inexistente retorna null", srv.Buscar(999) == null);
 
         System.out.println("-- Incluir");
